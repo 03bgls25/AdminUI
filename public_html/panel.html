@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Panel | Admin UI</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/portal.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Admin UI</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="mdi mdi-account-outline"></i> Jason Jordan <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#"><i class="mdi mdi-settings"></i> Settings</a></li>
+                            <li><a href="#"><i class="mdi mdi-lock-outline"></i> Change Password</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#"><i class="mdi mdi-logout-variant"></i> Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <span class="input-group-btn">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="mdi mdi-magnify"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </nav>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="dashboard.html"><i class="mdi mdi-view-dashboard"></i> Dashboard</a></li>
+                        <li><a href="sidemenu.html"><i class="mdi mdi-view-sequential"></i> Side Menu</a></li>
+                        <li><a href="listing.html"><i class="mdi mdi-format-list-bulleted"></i> Listing</a></li>
+                        <li class="active"><a href="panel.html"><i class="mdi mdi-note-text"></i> Panel</a></li>
+                        <li><a href="forms.html"><i class="mdi mdi-note-multiple-outline"></i> Forms</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="page-header">
+                <div class="clearfix">
+                    <div class="pull-left">
+                        <h1>Panel</h1>
+                        <ol class="breadcrumb">
+                            <li><a href="#">Home</a></li>
+                            <li class="active">Panel</li>
+                        </ol>
+                    </div>
+                    <div class="pull-right">
+                        <div class="form-group form-btn-group">
+                            <button class="btn btn-default" onclick="javascript:history.go(-1)">
+                                <i class="mdi mdi-arrow-left"></i> Back
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="section-listing">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Panel Default</h3>
+                            </div>
+                            <div class="panel-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia tempus ante, et sollicitudin lorem lobortis eu. Phasellus fermentum, massa eu tincidunt dapibus, enim libero suscipit lectus, vel mollis justo est sit amet risus. In eget ligula hendrerit, sollicitudin augue sed, vestibulum est. Mauris fringilla consequat quam, tempus aliquam ligula semper eu. Donec congue blandit diam eu faucibus. In blandit magna purus, vitae rhoncus ipsum scelerisque a. Curabitur in est a risus posuere feugiat. Donec pellentesque blandit suscipit. Sed viverra mattis leo vel finibus.
+                                </p>
+                            </div>
+                            <div class="panel-footer">
+                                <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ullamcorper aliquet aliquam. Quisque suscipit sapien libero, ac eleifend dolor ullamcorper ac.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Panel Primary</h3>
+                            </div>
+                            <div class="panel-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia tempus ante, et sollicitudin lorem lobortis eu. Phasellus fermentum, massa eu tincidunt dapibus, enim libero suscipit lectus, vel mollis justo est sit amet risus. In eget ligula hendrerit, sollicitudin augue sed, vestibulum est. Mauris fringilla consequat quam, tempus aliquam ligula semper eu. Donec congue blandit diam eu faucibus. In blandit magna purus, vitae rhoncus ipsum scelerisque a. Curabitur in est a risus posuere feugiat. Donec pellentesque blandit suscipit. Sed viverra mattis leo vel finibus.
+                                </p>
+                            </div>
+                            <div class="panel-footer">
+                                <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ullamcorper aliquet aliquam. Quisque suscipit sapien libero, ac eleifend dolor ullamcorper ac.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Panel Success</h3>
+                            </div>
+                            <div class="panel-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia tempus ante, et sollicitudin lorem lobortis eu. Phasellus fermentum, massa eu tincidunt dapibus, enim libero suscipit lectus, vel mollis justo est sit amet risus. In eget ligula hendrerit, sollicitudin augue sed, vestibulum est. Mauris fringilla consequat quam, tempus aliquam ligula semper eu. Donec congue blandit diam eu faucibus. In blandit magna purus, vitae rhoncus ipsum scelerisque a. Curabitur in est a risus posuere feugiat. Donec pellentesque blandit suscipit. Sed viverra mattis leo vel finibus.
+                                </p>
+                            </div>
+                            <div class="panel-footer">
+                                <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ullamcorper aliquet aliquam. Quisque suscipit sapien libero, ac eleifend dolor ullamcorper ac.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel panel-warning">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Panel Warning</h3>
+                            </div>
+                            <div class="panel-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia tempus ante, et sollicitudin lorem lobortis eu. Phasellus fermentum, massa eu tincidunt dapibus, enim libero suscipit lectus, vel mollis justo est sit amet risus. In eget ligula hendrerit, sollicitudin augue sed, vestibulum est. Mauris fringilla consequat quam, tempus aliquam ligula semper eu. Donec congue blandit diam eu faucibus. In blandit magna purus, vitae rhoncus ipsum scelerisque a. Curabitur in est a risus posuere feugiat. Donec pellentesque blandit suscipit. Sed viverra mattis leo vel finibus.
+                                </p>
+                            </div>
+                            <div class="panel-footer">
+                                <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ullamcorper aliquet aliquam. Quisque suscipit sapien libero, ac eleifend dolor ullamcorper ac.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel panel-danger">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Panel Danger</h3>
+                            </div>
+                            <div class="panel-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia tempus ante, et sollicitudin lorem lobortis eu. Phasellus fermentum, massa eu tincidunt dapibus, enim libero suscipit lectus, vel mollis justo est sit amet risus. In eget ligula hendrerit, sollicitudin augue sed, vestibulum est. Mauris fringilla consequat quam, tempus aliquam ligula semper eu. Donec congue blandit diam eu faucibus. In blandit magna purus, vitae rhoncus ipsum scelerisque a. Curabitur in est a risus posuere feugiat. Donec pellentesque blandit suscipit. Sed viverra mattis leo vel finibus.
+                                </p>
+                            </div>
+                            <div class="panel-footer">
+                                <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ullamcorper aliquet aliquam. Quisque suscipit sapien libero, ac eleifend dolor ullamcorper ac.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Panel Info</h3>
+                            </div>
+                            <div class="panel-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia tempus ante, et sollicitudin lorem lobortis eu. Phasellus fermentum, massa eu tincidunt dapibus, enim libero suscipit lectus, vel mollis justo est sit amet risus. In eget ligula hendrerit, sollicitudin augue sed, vestibulum est. Mauris fringilla consequat quam, tempus aliquam ligula semper eu. Donec congue blandit diam eu faucibus. In blandit magna purus, vitae rhoncus ipsum scelerisque a. Curabitur in est a risus posuere feugiat. Donec pellentesque blandit suscipit. Sed viverra mattis leo vel finibus.
+                                </p>
+                            </div>
+                            <div class="panel-footer">
+                                <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ullamcorper aliquet aliquam. Quisque suscipit sapien libero, ac eleifend dolor ullamcorper ac.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <hr >
+            <p class="text-center">Copyright &copy; 2017. All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/jquery.min.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+</body>
+</html>

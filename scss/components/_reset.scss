@@ -1,0 +1,305 @@
+.navbar.navbar-inverse{
+    background-color: $primary-color;
+    border: none;
+    border-radius: 0px;
+    margin-bottom: 0px;
+    .navbar-brand{
+        color: #fff;
+    }
+    .nav.navbar-nav{
+        li{
+            a{
+                color: #fff;
+            }
+            &.dropdown{
+                .dropdown-menu{
+                    border-color: #eee;;
+                    border-radius: 0px;
+                    li a{
+                        background-color: #fff;
+                        color: $text-color;
+                        &:hover,
+                        &:active{
+                            background-color: #eee;
+                        }
+                    }
+                }
+            }
+            &.dropdown.open a{
+                background-color: darken($primary-color, 10%);
+            }
+        } 
+    }
+    .navbar-form{
+        .input-group{
+            .form-control{
+                background: darken($primary-color, 10%);
+                border: none;
+                box-shadow: none;
+                color: #fff;
+                @include input-placeholder(#f9f9f9);
+            }
+            .input-group-btn{
+                .btn-primary{
+                    padding: 5px 12px;
+                    background-color: darken($primary-color, 10%);
+                    border: 1px solid darken($primary-color, 10%);
+                    i{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.navbar.navbar-default{
+    background: #fff;
+    box-shadow: 0px 1px 4px 0px #ddd;
+    border: none;
+    border-radius: 0px;
+    margin-bottom: 0px;
+    .nav.navbar-nav{
+        li{
+            a{
+                font-family: $heading-font;
+                font-size: $sm-font-size;
+                font-weight: $md-font-weight;
+                color: $dark-text-color;
+                &:hover,
+                &:focus{
+                    color: $primary-color;
+                }
+            }
+            &.active a{
+                color: $primary-color;
+                background: transparent;
+                position: relative;
+                &:after{
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background-color: $primary-color;
+                    height: 3px;
+                    border-radius: 10px;
+                    width: 70%;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}
+
+.page-header{
+	border-color: #ddd;
+	margin: 25px 0px 25px 0px;
+	h1{
+        font-family: $heading-font;
+		font-weight: $md-font-weight;
+		font-size: $lg-font-size;
+		margin: 0px;
+		padding: 10px 0px;
+	}
+}
+.breadcrumb{
+	background: transparent;
+    margin-bottom: 5px;
+    padding: 0px;
+    font-size: $sm-font-size;
+    color: $dark-text-color;
+    .active{
+    	color: $dark-text-color;
+    }
+}
+
+.btn{
+	&-default{
+        @include btn(#E0E2E5, #A1A4AB);
+    }
+    &-primary{
+        @include btn($primary-color, #fff);
+    }
+    &-info{
+        @include btn($info-color, #fff);
+    }
+    &-success{
+        @include btn($success-color, #fff);
+    }
+    &-warning{
+        @include btn($warning-color, #fff);
+    }
+    &-danger{
+        @include btn($danger-color, #fff);
+    }
+    &-link{
+        color: $primary-color;
+        &:hover,
+        &:focus{
+            color: $primary-color;
+        }
+    }
+}
+
+.label{
+    &-default{
+        @include label($default-color, $default-color);
+    }
+    &-primary{
+        @include label($primary-color, #fff);
+    }
+    &-info{
+        @include label($info-color, #fff);
+    }
+    &-success{
+        @include label($success-color, #fff);
+    }
+    &-warning{
+        @include label($warning-color, #fff);
+    }
+    &-danger{
+        @include label($danger-color, #fff);
+    }
+}
+
+.label-round{
+    &.label-default{
+        @include label_round($default-color);
+    }
+    &.label-primary{
+        @include label_round($primary-color);
+    }
+    &.label-info{
+        @include label_round($info-color);
+    }
+    &.label-success{
+        @include label_round($success-color);
+    }
+    &.label-warning{
+        @include label_round($warning-color);
+    }
+    &.label-danger{
+        @include label_round($danger-color);
+    }
+}
+
+a.label{
+    &-default{
+        @include label_link($default-color, $default-color);
+    }
+    &-primary{
+        @include label_link($primary-color, #fff);
+    }
+    &-info{
+        @include label_link($info-color, #fff);
+    }
+    &-success{
+        @include label_link($success-color, #fff);
+    }
+    &-warning{
+        @include label_link($warning-color, #fff);
+    }
+    &-danger{
+        @include label_link($danger-color, #fff);
+    }
+}
+
+.panel{
+    border: none;
+    border-radius: 0px;
+    box-shadow: 0px 0px 4px 1px #ddd;
+    .panel-heading{
+        border-color: #ddd; 
+        border-radius: 0px;
+        background-color: #fff;
+        position: relative;
+        .panel-title{
+            color: $dark-text-color;
+            padding: 4px 0px;
+            font-family: $heading-font;
+            font-size: $md-font-size;
+            font-weight: $md-font-weight;
+            &:after{
+                content: "";
+                position: absolute;
+                bottom: -2px;
+                left: 10px;
+                width: 45px;
+                height: 4px;
+                border-radius: 4px;
+            }
+        }
+    }
+    .panel-body{
+        p{
+            margin: 0px;
+        }
+    }
+    .panel-footer{
+        background-color: #fff;
+        p{
+            margin: 0px;
+            font-size: $xs-font-size;
+        }
+    }
+    &.panel-default{
+        border: none;
+        .panel-heading .panel-title:after{
+            background-color: $default-color;
+        }
+    }
+    &.panel-primary{
+        border: none;
+        .panel-heading .panel-title:after{
+            background-color: $primary-color;
+        }
+    }
+    &.panel-success{
+        border: none;
+        .panel-heading .panel-title:after{
+            background-color: $success-color;
+        }
+    }
+    &.panel-warning{
+        border: none;
+        .panel-heading .panel-title:after{
+            background-color: $warning-color;
+        }
+    }
+    &.panel-danger{
+        border: none;
+        .panel-heading .panel-title:after{
+            background-color: $danger-color;
+        }
+    }
+    &.panel-info{
+        border: none;
+        .panel-heading .panel-title:after{
+            background-color: $info-color;
+        }
+    }
+}
+
+.well{
+    background: $light-background;
+    border: none;
+    box-shadow: none;
+    border-radius: 0px;
+    margin-bottom: 0px;
+}
+
+.pagination{
+    li a{
+        color: $primary-color;
+        &:hover,
+        &:focus{
+            color: darken($primary-color, 10%);
+        }
+    }
+}
+.radio label,
+.checkbox label{
+    padding-left: 25px;
+    font-size: $sm-font-size;
+}

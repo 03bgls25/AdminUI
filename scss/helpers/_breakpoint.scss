@@ -1,0 +1,30 @@
+@mixin breakpoint($class) {
+  @if $class == xs {
+    @media (max-width: 767px) { @content; }
+  }
+ 
+  @else if $class == sm {
+    @media (min-width: 768px) { @content; }
+  }
+ 
+  @else if $class == md {
+    @media (min-width: 992px) { @content; }
+  }
+ 
+  @else if $class == lg {
+    @media (min-width: 1200px) { @content; }
+  }
+ 
+  @else {
+    @warn "Breakpoint mixin supports: xs, sm, md, lg";
+  }
+}
+
+@mixin screen($name, $orientation:portrait) {
+  @if $name == ipad {
+    @media (min-width: 768px) and (max-width: 1024px) and (orientation: $orientation) { @content; }
+  }
+  @else {
+    @media (min-width: 1024px) and (max-width: 768px) and (orientation: $orientation) { @content; }
+  }
+}

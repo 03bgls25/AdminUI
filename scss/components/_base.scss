@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900|Noto+Sans:400,700|Poppins:300,400,700,900|Roboto:300,400,700,900");
+body{
+	background: $light-background;
+	font-family: $text-font;
+	font-size: $sm-font-size;
+	color: $text-color;
+}
+h1{
+	font-family: $title-font;
+	font-size: $xl-font-size;
+	font-weight: $xl-font-weight;
+	color: $dark-text-color;
+	margin: 0px;
+	padding: 20px 0px;
+}
+h2{
+	font-family: $title-font;
+	font-size: $lg-font-size;
+	font-weight: $xl-font-weight;
+	color: $dark-text-color;
+	margin: 0px;
+	padding: 15px 0px;
+}
+h3{
+	font-family: $title-font;
+	font-size: $md-font-size;
+	font-weight: $xl-font-weight;
+	color: $dark-text-color;
+	margin: 0px;
+	padding: 10px 0px;
+}
+h4{
+	font-family: $title-font;
+	font-size: $sm-font-size;
+	font-weight: $xl-font-weight;
+	color: $dark-text-color;
+	margin: 0px;
+	padding: 5px 0px;
+}
+a{
+	color: $primary-color;
+	&:hover,
+	&:focus{
+		color: darken($primary-color, 10%);
+	}
+}
+label{
+	font-size: $xs-font-size;
+	font-weight: $md-font-weight;
+}
+i{
+	margin-right: 5px;
+}
+hr{
+	border-color: $divider-color;
+	box-shadow: 0px 1px 0px 0px #fff;
+}

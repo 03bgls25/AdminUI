@@ -1,0 +1,68 @@
+%clearfix{
+	&:after,
+	&:before {
+		content: "";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+@mixin input-placeholder($color){
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+  &:-moz-placeholder {
+    color: $color;  
+  }
+  &::-moz-placeholder { 
+    color: $color;  
+  }
+  &:-ms-input-placeholder {  
+    color: $color;  
+  }
+}
+
+@mixin btn($btn-background, $btn-color){
+  background-color: $btn-background;
+  border-color: $btn-background;
+  border-bottom: 3px solid darken($btn-background, 10%);
+  font-weight: $sm-font-weight;
+  text-transform: uppercase;
+  color: $btn-color;
+  &:focus, 
+  &:hover,
+  &:active{
+    outline: none;
+    background-color: darken($btn-background, 5%);
+    border-color: darken($btn-background, 5%);
+    border-bottom: 3px solid darken($btn-background, 10%);
+  }
+}
+
+@mixin label($label-background, $label-color){
+  background-color: $label-background;
+  border-color: $label-background;
+  border-radius: 15px;
+  padding: 2px 20px;
+  text-transform: uppercase;
+  font-size: $xs-font-size;
+  font-weight: $xs-font-weight;
+}
+
+@mixin label_round($label-color){
+  background: transparent;
+  border: 1px solid $label-color;
+  color: $label-color;
+}
+
+@mixin label_link($label-background, $label-color){
+  &:focus, 
+  &:hover,
+  &:active{
+    outline: none;
+    background-color: darken($label-background, 10%) !important;
+    border-color: darken($label-background, 10%) !important;
+  }
+}
