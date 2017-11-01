@@ -1,0 +1,24 @@
+{
+  "name": "decorativerugs",
+  "version": "1.0.0",
+  "description": "CRM for Decorative Rugs",
+  "main": "index.js",
+  "scripts": {
+    "test": "console.log(\"Decorative Rugs\");"
+  },
+  "author": "Decorative Rugs",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "sass": "^1.0.0-beta.2"
+  },
+  "dependencies": {
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1"
+  }
+}
