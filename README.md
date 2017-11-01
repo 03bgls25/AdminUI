@@ -19,25 +19,17 @@ Theme Documentation
 ----------------------------
 You can easily customized stylesheet with SCSS file provided.
 
-
-----------
-
-
 **Prerequisite**
 
  - [Node JS](https://nodejs.org/en/)
  - [Gulp JS](https://gulpjs.com/)
 
-
-----------
 **SCSS compiler using Gulp JS**
 
  1. **Step 1:** Go to project directory using command prompt or terminal
  2. **Step 2:** Install node package module using command `npm install`
  3. **Step 3:** Run Gulp JS task runner using command `gulp`  this will watch all scss compilation task
 
-
-----------
 **SCSS Documentation**
 
 SCSS folder has 4 sub-folders (*components*, *helpers*, *themes*, *vendors*) and 1 scss file (*portal.scss*). 
@@ -95,26 +87,27 @@ Customize theme color, changing listed variable in *variable.scss*
 Customize theme fonts, changing listed variable in *variable.scss*
 
     /* FONT-FAMILY DEFINATION */
-    $heading-font: 'Poppins', sans-serif;
-    $title-font: 'Noto Sans', sans-serif;
+    $heading-font: YOUR_FONT_NAME;
+    $title-font: YOUR_FONT_NAME;
+    $text-font: YOUR_FONT_NAME;
 
     /* FONT-SIZE DEFINATION */
-    $xl-font-size: 28px;
-    $lg-font-size: 22px;
-    $md-font-size: 16px;
-    $sm-font-size: 14px;
-    $xs-font-size: 12px;
+    $xl-font-size: YOUR_FONT_SIZE;
+    $lg-font-size: YOUR_FONT_SIZE;
+    $md-font-size: YOUR_FONT_SIZE;
+    $sm-font-size: YOUR_FONT_SIZE;
+    $xs-font-size: YOUR_FONT_SIZE;
     
     /* FONT-WEIGHT DEFINATION */
-    $xl-font-weight: 900;
-    $lg-font-weight: 700;
-    $md-font-weight: 500;
-    $sm-font-weight: 400;
-    $xs-font-weight: 300;
+    $xl-font-weight: YOUR_FONT_WEIGHT;
+    $lg-font-weight: YOUR_FONT_WEIGHT;
+    $md-font-weight: YOUR_FONT_WEIGHT;
+    $sm-font-weight: YOUR_FONT_WEIGHT;
+    $xs-font-weight: YOUR_FONT_WEIGHT;
     
     /* TEXT-COLOR DEFINATION */
-    $text-color: #3D4246;
-    $light-text-color: #A1A4AB;
+    $text-color: YOUR_FONT_COLOR;
+    $light-text-color: YOUR_FONT_COLOR;
 
 
 ----------
