@@ -25,7 +25,7 @@ $.fn.customCheckBox = function(options){
     });
 }
 
-$.fn.customRadioBtn=function(){
+$.fn.customRadioBtn = function(){
     var radioBtn=$(this);
     $(radioBtn).each(function(){
         $(this).wrap('<span class="radio-custom"></span>');
@@ -43,11 +43,24 @@ $.fn.customRadioBtn=function(){
         });
 }
 
+$.fn.customDropdownList = function(){
+    var selectList=$(this);
+    $(selectList).each(function(){
+        $(this).wrap("<span class='select-wrapper-custom'></span>");
+        $(this).after("<span class='select-holder-custom'></span>");
+    });
+    $(selectList).change(function(){
+        var selectedOption = $(this).find(":selected").text();
+        $(this).next(".select-holder-custom").text(selectedOption);
+    }).trigger('change');
+}
+
 
 $(document).ready(function(){
-    $(".default-checkbox").customCheckBox();
+    $(".custom-checkbox").customCheckBox();
     $(".toggle-checkbox").customCheckBox({
         type: "toggle"
     });
     $(".custom-radio").customRadioBtn();
+    $(".custom-dropdown").customDropdownList();
 })

@@ -81,23 +81,54 @@
 }
 
 .btn-round{
-    border: 2px solid #ddd;
-    color: $primary-color;
-    padding: 0px;
-    height: 35px;
-    width: 35px;
-    line-height: 32px;
-    text-align: center;
-    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    line-height: 38px;
     i{
         margin: 0px;
         font-size: 16px;
     }
-    &:hover,
-    &:focus{
-        background: #eee;
-        border: 2px solid #ddd;
-        color: darken($primary-color, 10%);
+    &.btn-lg{
+        height: 45px;
+        width: 45px;
+        line-height: 42px;
+        i{
+            margin: 0px;
+            font-size: 20px;
+        }
+    }
+    &.btn-md{
+        height: 40px;
+        width: 40px;
+        line-height: 38px;
+    }
+    &.btn-sm{
+        height: 35px;
+        width: 35px;
+        line-height: 32px;
+    }
+    &.btn-default{
+        @include btn-round($default-color);
+    }
+    &.btn-primary{
+        @include btn-round($primary-color);        
+    }
+    &.btn-success{
+        @include btn-round($success-color);        
+    }
+    &.btn-warning{
+        @include btn-round($warning-color);        
+    }
+    &.btn-danger{
+        @include btn-round($danger-color);        
+    }
+    &.btn-link{
+        @include btn-round(#ddd);
+        color: $primary-color;
+        &:hover,
+        &:focus{
+            color: $primary-color;
+        }
     }
 }
 

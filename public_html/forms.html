@@ -22,7 +22,9 @@
         <nav class="navbar navbar-inverse">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#">Admin UI</a>
+                    <a class="navbar-brand" href="#">
+                        <img src="img/logo.png" alt="">
+                    </a>
                 </div>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
@@ -82,16 +84,37 @@
                             <li class="active">Form</li>
                         </ol>
                     </div>
-                    <div class="pull-right">
-                        <div class="form-group form-btn-group">
-                            <button class="btn btn-default" onclick="javascript:history.go(-1)">
-                                <i class="mdi mdi-arrow-left"></i> Back
-                            </button>
-                        </div>
-                    </div>
                 </div>
             </div>
-            <section class="section-listing">
+            <div class="alert alert-success">
+                <strong>Success</strong>
+                You successfully read this important alert message.
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="alert alert-info">
+                <strong>Info</strong>
+                You successfully read this important alert message.
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="alert alert-warning">
+                <strong>Warning</strong>
+                You successfully read this important alert message.
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="alert alert-danger">
+                <strong>Danger</strong>
+                You successfully read this important alert message.
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <section class="section-forms">
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <div class="row">
@@ -99,6 +122,18 @@
                                 <div class="form-group">
                                     <label>Input type text</label>
                                     <input type="email" class="form-control" placeholder="Your Placeholder">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Dropdown List</label>
+                                    <select class="form-control custom-dropdown">
+                                        <option>Option #1</option>
+                                        <option>Option #2</option>
+                                        <option>Option #3</option>
+                                        <option>Option #4</option>
+                                        <option>Option #5</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
@@ -140,22 +175,22 @@
                                     <label>Custom Checkbox</label>
                                     <div class="checkbox">
                                         <label>
-                                            <input type="checkbox" class="default-checkbox"> Checkbox #1
+                                            <input type="checkbox" class="custom-checkbox"> Checkbox #1
                                         </label>
                                     </div>
                                     <div class="checkbox">
                                         <label>
-                                            <input type="checkbox" class="default-checkbox"> Checkbox #2
+                                            <input type="checkbox" class="custom-checkbox"> Checkbox #2
                                         </label>
                                     </div>
                                     <div class="checkbox">
                                         <label>
-                                            <input type="checkbox" class="default-checkbox"> Checkbox #3
+                                            <input type="checkbox" class="custom-checkbox"> Checkbox #3
                                         </label>
                                     </div>
                                     <div class="checkbox">
                                         <label>
-                                            <input type="checkbox" class="default-checkbox"> Checkbox #4
+                                            <input type="checkbox" class="custom-checkbox"> Checkbox #4
                                         </label>
                                     </div>
                                 </div>
@@ -190,6 +225,14 @@
                             <div class="col-md-6">
                                 <label>Button Design</label>
                                 <div class="form-group">
+                                    <button class="btn btn-sm btn-default">Default</button>
+                                    <button class="btn btn-sm btn-primary">Primary</button>
+                                    <button class="btn btn-sm btn-success">Success</button>
+                                    <button class="btn btn-sm btn-warning">Warning</button>
+                                    <button class="btn btn-sm btn-danger">Danger</button>
+                                    <button class="btn btn-sm btn-link">Link</button>
+                                </div>
+                                <div class="form-group">
                                     <button class="btn btn-default">Default</button>
                                     <button class="btn btn-primary">Primary</button>
                                     <button class="btn btn-success">Success</button>
@@ -197,7 +240,114 @@
                                     <button class="btn btn-danger">Danger</button>
                                     <button class="btn btn-link">Link</button>
                                 </div>
+                                <div class="form-group">
+                                    <button class="btn btn-lg btn-default">Default</button>
+                                    <button class="btn btn-lg btn-primary">Primary</button>
+                                    <button class="btn btn-lg btn-success">Success</button>
+                                    <button class="btn btn-lg btn-warning">Warning</button>
+                                    <button class="btn btn-lg btn-danger">Danger</button>
+                                    <button class="btn btn-lg btn-link">Link</button>
+                                </div>
                             </div>
+                            <div class="col-md-6">
+                                <label>Button Design</label>
+                                <div class="form-group">
+                                    <button class="btn btn-sm btn-default btn-round">
+                                        <i class="mdi mdi-plus"></i>
+                                    </button>
+                                    <button class="btn btn-sm btn-primary btn-round">
+                                        <i class="mdi mdi-plus"></i>
+                                    </button>
+                                    <button class="btn btn-sm btn-success btn-round">
+                                        <i class="mdi mdi-plus"></i>
+                                    </button>
+                                    <button class="btn btn-sm btn-warning btn-round">
+                                        <i class="mdi mdi-plus"></i>
+                                    </button>
+                                    <button class="btn btn-sm btn-danger btn-round">
+                                        <i class="mdi mdi-plus"></i>
+                                    </button>
+                                    <button class="btn btn-sm btn-link btn-round">
+                                        <i class="mdi mdi-plus"></i>
+                                    </button>
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-default btn-round">
+                                        <i class="mdi mdi-plus"></i>
+                                    </button>
+                                    <button class="btn btn-primary btn-round">
+                                        <i class="mdi mdi-plus"></i>
+                                    </button>
+                                    <button class="btn btn-success btn-round">
+                                        <i class="mdi mdi-plus"></i>
+                                    </button>
+                                    <button class="btn btn-warning btn-round">
+                                        <i class="mdi mdi-plus"></i>
+                                    </button>
+                                    <button class="btn btn-danger btn-round">
+                                        <i class="mdi mdi-plus"></i>
+                                    </button>
+                                    <button class="btn btn-link btn-round">
+                                        <i class="mdi mdi-plus"></i>
+                                    </button>
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-lg btn-default btn-round">
+                                        <i class="mdi mdi-plus"></i>
+                                    </button>
+                                    <button class="btn btn-lg btn-primary btn-round">
+                                        <i class="mdi mdi-plus"></i>
+                                    </button>
+                                    <button class="btn btn-lg btn-success btn-round">
+                                        <i class="mdi mdi-plus"></i>
+                                    </button>
+                                    <button class="btn btn-lg btn-warning btn-round">
+                                        <i class="mdi mdi-plus"></i>
+                                    </button>
+                                    <button class="btn btn-lg btn-danger btn-round">
+                                        <i class="mdi mdi-plus"></i>
+                                    </button>
+                                    <button class="btn btn-lg btn-link btn-round">
+                                        <i class="mdi mdi-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Label Tag Design</label>
+                                <div class="form-group">
+                                    <label class="label label-default">Default</label>
+                                    <label class="label label-primary">Primary</label>
+                                    <label class="label label-success">Success</label>
+                                    <label class="label label-warning">Warning</label>
+                                    <label class="label label-danger">Danger</label>                                    
+                                </div>
+                                <div class="form-group">
+                                    <label class="label label-outline label-default">Default</label>
+                                    <label class="label label-outline label-primary">Primary</label>
+                                    <label class="label label-outline label-success">Success</label>
+                                    <label class="label label-outline label-warning">Warning</label>
+                                    <label class="label label-outline label-danger">Danger</label>                                    
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                    <label>Label Link Design</label>
+                                    <div class="form-group">
+                                        <a href="#" class="label label-default">Default</a>
+                                        <a href="#" class="label label-primary">Primary</a>
+                                        <a href="#" class="label label-success">Success</a>
+                                        <a href="#" class="label label-warning">Warning</a>
+                                        <a href="#" class="label label-danger">Danger</a>                                    
+                                    </div>
+                                    <div class="form-group">
+                                        <a href="#" class="label label-outline label-default">Default</a>
+                                        <a href="#" class="label label-outline label-primary">Primary</a>
+                                        <a href="#" class="label label-outline label-success">Success</a>
+                                        <a href="#" class="label label-outline label-warning">Warning</a>
+                                        <a href="#" class="label label-outline label-danger">Danger</a>                                    
+                                    </div>
+                                </div>
                         </div>
                     </div>
                 </div>

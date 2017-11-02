@@ -92,9 +92,19 @@
     }
 }
 
+.navbar-header{
+    .navbar-brand{
+       padding: 0px 0px 0px 15px; 
+       img{
+           width: auto;
+           height: 50px;
+       }
+    }
+}
+
 .page-header{
 	border-color: #ddd;
-	margin: 25px 0px 25px 0px;
+	margin: 15px 0px 15px 0px;
 	h1{
         font-family: $heading-font;
 		font-weight: $md-font-weight;
@@ -115,6 +125,11 @@
 }
 
 .btn{
+    &-lg{
+        padding: 10px 12px;
+        font-size: 14px;
+        border-radius: 4px;
+    }
 	&-default{
         @include btn(#E0E2E5, #A1A4AB);
     }
@@ -163,7 +178,7 @@
     }
 }
 
-.label-round{
+.label-outline{
     &.label-default{
         @include label_round($default-color);
     }
@@ -278,6 +293,22 @@ a.label{
         .panel-heading .panel-title:after{
             background-color: $info-color;
         }
+    }
+}
+
+.alert{
+    border-radius: 0px;
+    &.alert-success{
+        @include alert($success-color);
+    }
+    &.alert-warning{
+        @include alert($warning-color);
+    }
+    &.alert-danger{
+        @include alert($danger-color);
+    }
+    &.alert-info{
+        @include alert($info-color);
     }
 }
 

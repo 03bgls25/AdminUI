@@ -41,6 +41,39 @@
   }
 }
 
+@mixin btn-round($btn-background){
+  padding: 0px;
+  text-align: center;
+  background: transparent;
+  border-radius: 100%;
+  border: 2px solid $btn-background;
+  color: $btn-background;
+  &:hover,
+  &:focus{
+      background: lighten($btn-background, 5%);
+      border: 2px solid $btn-background;
+      color: #fff;
+  }
+}
+
+@mixin alert($alert-color){
+  border-left: 4px solid $alert-color;
+  border-color: $alert-color;
+  color: darken($alert-color, 5%);
+  background: lighten($alert-color, 40%);
+  position: relative;
+  strong{
+    display: block;
+    text-transform: uppercase;
+    font-size: $md-font-size;
+  }
+  .close{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+  }
+}
+
 @mixin label($label-background, $label-color){
   background-color: $label-background;
   border-color: $label-background;

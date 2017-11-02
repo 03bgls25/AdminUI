@@ -10,7 +10,7 @@ Light, simple, custom interface and bootstrap v3.3.7 based admin panel free temp
 
 Installation Guide
 ---------------------------------------
-**Download From GitHub** or clone project to your machine
+**Download from GitHub** or clone project to your machine
 
     git clone https://github.com/03bgls25/AdminUI.git
 
