@@ -1,0 +1,355 @@
+.header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9;
+    width: 100%;
+}
+.sidemenu{
+    &-icon{
+        display: block;
+        float: left;
+        margin-right: 15px;
+        margin-top: 15px;
+    }
+    &-iconbar-1,
+    &-iconbar-2, 
+    &-iconbar-3 {
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: #fff;
+        margin: 4px 0;
+        transition: 0.4s;
+    }
+    &-nav{
+        height: calc(100% - 50px);
+        position: fixed;
+        left: 0;
+        top: 50px;
+        width: 225px;
+    }
+    &-list{
+        margin-top: 15px;
+        > li{
+            margin: 1px 0px;
+            box-shadow: none;
+            a{
+                font-family: $heading-font;
+                font-size: $sm-font-size;
+                font-weight: $md-font-weight;
+                color: $dark-text-color;
+                i{
+                    margin: 0px 5px;
+                    font-size: 16px;
+                    vertical-align: middle;
+                    color: $light-text-color;
+                }
+                &:hover,
+                &:focus{
+                    background-color: #f4f4f4;
+                    color: $primary-color;
+                    i{
+                        color: $primary-color;
+                    }
+                }
+            }
+            &.active a{
+                color: $primary-color;
+                background-color: #fafafa;
+                position: relative;
+                i{
+                    color: $primary-color;
+                }
+                &:after{
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    top: 0;
+                    left: 0;
+                    background-color: $primary-color;
+                    width: 4px;
+                    margin: auto;
+                }
+                &:hover,
+                &:focus{
+                    background-color: #f4f4f4;
+                }
+            }
+        }
+        .divider{
+            height: 1px;
+            margin: 9px 0;
+            overflow: hidden;
+            background-color: #e5e5e5;
+        }
+    }
+    &-content{
+        padding-left: 225px;
+        padding-top: 50px;
+    }
+}
+.main{
+    margin-top: 100px;
+}
+.btn-round{
+    height: 40px;
+    width: 40px;
+    line-height: 38px;
+    i{
+        margin: 0px;
+        font-size: 16px;
+    }
+    &.btn-lg{
+        height: 45px;
+        width: 45px;
+        line-height: 42px;
+        i{
+            margin: 0px;
+            font-size: 20px;
+        }
+    }
+    &.btn-md{
+        height: 40px;
+        width: 40px;
+        line-height: 38px;
+    }
+    &.btn-sm{
+        height: 35px;
+        width: 35px;
+        line-height: 32px;
+    }
+    &.btn-default{
+        @include btn-round($default-color);
+    }
+    &.btn-primary{
+        @include btn-round($primary-color);        
+    }
+    &.btn-success{
+        @include btn-round($success-color);        
+    }
+    &.btn-warning{
+        @include btn-round($warning-color);        
+    }
+    &.btn-danger{
+        @include btn-round($danger-color);        
+    }
+    &.btn-link{
+        @include btn-round(#ddd);
+        color: $primary-color;
+        &:hover,
+        &:focus{
+            color: $primary-color;
+        }
+    }
+}
+.form-btn-group{
+    margin-top: 25px;
+    margin-bottom: 0px;
+}
+.row-search{
+    .form-group{
+        margin-bottom: 0px;
+        .input-group{
+            .form-control{
+                background-color: #E0E2E5;
+                border-color: #E0E2E5;
+                box-shadow: none;
+            }
+            .input-group-btn .btn-default{
+                border: 1px solid #E0E2E5;
+            }
+        }
+    }
+}
+.btn-filter{
+    border: 1px solid #ccc;
+    background: #fff;
+    color: $text-color;
+    &:hover,
+    &:focus{
+        border: 1px solid #ccc;
+        background: #eee;
+        color: $text-color;
+    }
+}
+.row-filter{
+    .form-group{
+        margin-bottom: 0px;
+        .btn{
+            margin-top: 24px;
+        }
+    }
+}
+.listing-section{
+    .table{
+        tr th{
+            text-transform: uppercase;
+        }
+        tr td,
+        tr th{
+            vertical-align: middle;
+        }
+        tr th:first-child,
+        tr td:first-child{
+            padding-left: 20px;
+        }
+        tr th:last-child,
+        tr td:last-child{
+            padding-right: 20px;
+        }
+    }
+    .pagination{
+        margin: 0px;
+    }
+    .pagination-info{
+        font-size: $xs-font-size;
+        margin-bottom: 0px;
+        margin-top: 10px;
+    }
+}
+.list{
+    @extend %clearfix;
+    i{
+        color: $light-text-color;
+    }
+    &-img{
+        width: 75px;
+        height: 75px;
+        overflow: hidden;
+        float: left;
+        margin-right: 15px;
+        > img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    &-title{
+        font-family: $title-font;
+        font-size: $md-font-size;
+        font-weight: $lg-font-weight;
+        color: $dark-text-color;
+        margin-bottom: 5px;
+        padding: 6px 0px 2px 0px;
+    }
+    &-text{
+        font-family: $text-font;
+        font-size: $sm-font-size;
+        font-weight: $sm-font-weight;
+        color: $text-color;
+        margin-bottom: 5px;
+    }
+    &-info{
+        font-family: $text-font;
+        font-size: $xs-font-size;
+        color: $text-color;
+        margin-bottom: 5px;
+        > span{
+            padding: 0px 10px;
+            border-right: 1px solid #ddd;
+            &:first-child{
+                padding-left: 0px;
+            }
+            &:last-child{
+                padding-right: 0px;
+                border-right: none;
+            }
+        }
+    }
+}
+.login-section{
+    @extend %clearfix;
+    height: 100%;
+    .login{
+        &-col{
+            height: 100%;
+            width: 50%;
+            float: left;
+        }
+        &-title{
+            font-family: $heading-font;
+            font-size: $lg-font-size;
+            font-weight: $md-font-weight;
+            margin: 25px 0px;
+            position: relative;
+            &:after{
+                content: "";
+                position: absolute;
+                border-radius: 4px;
+                bottom: 0;
+                left: 0;
+                display: inline-block;
+                background-color: $primary-color;
+                width: 40px;
+                height: 4px;
+
+            }
+        }
+        &-form{
+            width: 425px;
+            float: right;
+            padding-right: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        }
+        &-banner{
+            background-image: url('../img/login-img.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            &:after{
+                content: "";
+                background-color: $primary-color;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0.5;
+            }
+        }
+    }
+}
+.company{
+    &-name{
+        padding-top: 5px;
+        padding-bottom: 10px;
+        font-family: $heading-font;
+        font-size: $xl-font-size;
+        font-weight: $lg-font-weight;
+        color: $primary-color;
+    }
+    &-tag{
+        font-size: $sm-font-size;
+        font-weight: $xs-font-weight;
+    }
+    &-title{
+        padding-bottom: 85px;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-left: 50px;
+        position: relative;
+        z-index: 99;
+        font-family: $heading-font;
+        font-size: $xl-font-size;
+        font-weight: $xs-font-weight;
+        color: #fff;
+        span, strong{
+            display: block;
+        }
+        strong{
+            font-weight: $md-font-weight;
+        }
+    }
+}
+.footer{
+    padding-bottom: 25px;
+}

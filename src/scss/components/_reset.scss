@@ -124,6 +124,21 @@
     }
 }
 
+.form{
+
+}
+
+.input-group{
+    &-addon{
+        background: #fff;
+        border-right: none
+    }
+    .form-control{
+        border-left: none;
+        box-shadow: none;
+    }
+}
+
 .btn{
     &-lg{
         padding: 10px 12px;

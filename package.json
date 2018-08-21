@@ -1,24 +1,51 @@
 {
-  "name": "decorativerugs",
+  "name": "adminui",
   "version": "1.0.0",
-  "description": "CRM for Decorative Rugs",
-  "main": "index.js",
+  "description": "Light, simple, custom interface and bootstrap v3.3.7 based admin panel free template",
+  "main": "gulpfile.js",
   "scripts": {
-    "test": "console.log(\"Decorative Rugs\");"
+    "test": "console.log(\"AdminUI project running..\");"
   },
-  "author": "Decorative Rugs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/03bgls25/AdminUI.git"
+  },
+  "keywords": [
+    "adminui",
+    "custom",
+    "admin",
+    "panel",
+    "light",
+    "simple",
+    "free",
+    "template"
+  ],
+  "author": "Bal Gopal Lal Shrestha",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/03bgls25/AdminUI/issues"
+  },
+  "homepage": "https://github.com/03bgls25/AdminUI#readme",
   "devDependencies": {
+    "bower": "*",
+    "browser-sync": "*",
     "gulp": "^3.9.1",
-    "sass": "^1.0.0-beta.2"
+    "less": "*",
+    "sass": "*"
   },
   "dependencies": {
-    "gulp-autoprefixer": "^4.0.0",
-    "gulp-minify-css": "^1.2.4",
-    "gulp-notify": "^3.0.0",
-    "gulp-plumber": "^1.1.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.6.1"
+    "gulp-autoprefixer": "*",
+    "gulp-concat": "*",
+    "gulp-jshint": "*",
+    "gulp-less": "*",
+    "gulp-minify-css": "*",
+    "gulp-notify": "*",
+    "gulp-plumber": "*",
+    "gulp-rename": "*",
+    "gulp-sass": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-uglify": "*",
+    "jshint": "*",
+    "jshint-stylish": "*"
   }
 }

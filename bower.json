@@ -1,0 +1,29 @@
+{
+  "name": "adminui",
+  "description": "Light, simple, custom interface and bootstrap v3.3.7 based admin panel free template",
+  "main": "gulpfile.js",
+  "authors": [
+    "Bal Gopal Lal Shrestha"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "adminui",
+    "custom",
+    "admin",
+    "panel",
+    "light",
+    "simple",
+    "free",
+    "template"
+  ],
+  "homepage": "https://github.com/03bgls25/AdminUI",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/assets",
+    "test",
+    "tests"
+  ]
+}

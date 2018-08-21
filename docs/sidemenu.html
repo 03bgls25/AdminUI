@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dashboard | Admin UI</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900|Noto+Sans:400,700|Poppins:300,400,700,900|Roboto:300,400,700,900">
+    <link rel="stylesheet" type="text/css" href="css/portal.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="#" id="sidemenuNav" class="sidemenu-icon">
+                        <span class="sidemenu-iconbar-1"></span>
+                        <span class="sidemenu-iconbar-2"></span>
+                        <span class="sidemenu-iconbar-3"></span>
+                    </a>
+                    <a class="navbar-brand" href="#">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="mdi mdi-account-outline"></i> Jason Jordan <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#"><i class="mdi mdi-settings"></i> Settings</a></li>
+                            <li><a href="#"><i class="mdi mdi-lock-outline"></i> Change Password</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#"><i class="mdi mdi-logout-variant"></i> Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <span class="input-group-btn">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="mdi mdi-magnify"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <nav class="navbar navbar-default sidemenu-nav">
+        <ul class="nav nav-stacked sidemenu-list" id="accordion">
+            <li>
+                <a href="#">
+                    <i class="mdi mdi-view-week"></i>
+                    Top Menu
+                </a>
+            </li>
+            <li class="divider"></li>
+            <li class="panel active">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#menu1">
+                    <i class="mdi mdi-view-dashboard"></i> 
+                    Dashbaord
+                </a>
+                <ul class="nav nav-stacked collapse" id="menu1">
+                    <li><a href="#"><i class="mdi mdi-view-agenda"></i> Single Column</a></li>
+                    <li><a href="#"><i class="mdi mdi-view-array"></i> Double Column</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="listing.html">
+                    <i class="mdi mdi-format-list-bulleted"></i>
+                    Listing
+                </a>
+            </li>
+            <li>
+                <a href="panel.html">
+                    <i class="mdi mdi-note-text"></i>
+                    Panel
+                </a>
+            </li>
+            <li>
+                <a href="forms.html">
+                    <i class="mdi mdi-note-multiple-outline"></i>
+                    Forms
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main class="sidemenu-content">
+        <div class="page-header">
+            <div class="clearfix">
+                <div class="pull-left">
+                    <h1>Dashboard</h1>
+                    <ol class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li class="active">Dashboard</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <hr >
+            <p class="text-center">Copyright &copy; 2017. All rights reserved</p>
+        </footer>
+    </main>
+
+    <script src="assets/js/jquery.min.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+</body>
+</html>

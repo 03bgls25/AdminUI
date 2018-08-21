@@ -1,8 +1,12 @@
+html{
+	height: 100%;
+}
 body{
 	background: $light-background;
 	font-family: $text-font;
 	font-size: $sm-font-size;
 	color: $text-color;
+	height: 100%;
 }
 h1{
 	font-family: $title-font;
